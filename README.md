@@ -80,11 +80,6 @@ La agenda acepta un **parámetro de consulta** con la fecha a mostrar:
 /agenda?fecha=2026-10-25
 ```
 
-## Documentación
-
-- [`docs/ARQUITECTURA_MVVM.md`](docs/ARQUITECTURA_MVVM.md): explicación completa
-  de la arquitectura, los ViewModels, el flujo de datos y las reglas de negocio.
-
 ## Requisitos
 
 - Flutter 3.47 o superior (Dart 3.13)
@@ -97,38 +92,7 @@ flutter pub get
 flutter run
 ```
 
-## Pruebas
-
-```bash
-flutter analyze
-flutter test
-```
-
-Las pruebas cubren las reglas de turnos (domingo, pasado, solapes, liberación de
-horarios, filtrado de estilistas), la búsqueda de clientes, la guarda de borrado
-y la propagación de cambios entre ViewModels.
-
-## APK
-
-```bash
-flutter build apk --release
-```
-
-Salida: `build/app/outputs/flutter-apk/app-release.apk`.
-
-- Nombre visible: **Turco**
-- Application ID: `com.arieldavid.turco`
-
 ## Assets
 
 - Tipografía Poppins (Regular, Medium, SemiBold y Bold) en `assets/fonts`.
 - Logo en `assets/images/logo.png` y avatares en `assets/avatars/`.
-
-## Notas
-
-- No se agregó una pestaña **Estilos** porque el proyecto no cuenta con modelo,
-  datos ni pantalla para esa sección; agregarla hubiera requerido inventar
-  funcionalidad fuera del alcance.
-- El identificador de paquete se definió como `com.arieldavid.turco` tomando el
-  nombre del alumno; si la entrega exige otro, se cambia en
-  `android/app/build.gradle.kts` y en la ruta de `MainActivity.kt`.
