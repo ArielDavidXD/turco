@@ -1,4 +1,4 @@
-package com.arieldavid.turco.turco
+package com.arieldavid.turco
 
 import io.flutter.embedding.android.FlutterActivity
 
